@@ -1,0 +1,258 @@
+body {
+    width: 1170px;
+    height: 70px;
+    margin: auto;
+}
+
+.service-section {
+    border-bottom:1px #e1e1e1 solid;
+    margin-bottom:30px
+
+}
+.service-section .inner {
+    width:1170px;
+    margin:auto;
+    overflow:hidden;
+}
+
+#store-messages {
+    width:1170px;
+    height: 70px;
+    margin:auto;
+    overflow:hidden;
+}
+
+#store-messages.messages-3 .message {
+    float: left;
+    padding: 20px 10px 0px 10px; /* alterei */
+    height: 100%;
+    width: 23%; /* alterei */
+    text-align: left;
+    border-right:1px #e5e5e5 solid;
+    border-left:1px #fff solid
+}
+.product-view #store-messages.messages-3 .message {
+    float: left;
+    padding: 15px 0px 0px 50px;
+    height: 100%;
+    width: 25%;
+    text-align: left;
+    border-right:1px #e5e5e5 solid;
+    border-left:1px #fff solid
+}
+
+@media(min-width: 768px) and (max-width: 983px){
+    #store-messages .parcele span,
+    #store-messages .desconto span
+    {
+        position: relative;
+        left:15px;
+    }
+}
+
+#store-messages .last {
+    margin-right: 0px!important;
+    border-right:none!important
+}
+
+#store-messages .first {
+    border-left:none!important
+}
+
+
+#store-messages .message {
+    padding: 0;
+    position: relative;
+    text-align:left;
+}
+
+#store-messages .message strong {
+    font-weight: bold;
+    color: #33a8cd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.product-view #store-messages .message strong {
+    font-weight: bold;
+    color: #33a8cd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom:5px;
+}
+
+#store-messages .message a {
+    display: block;
+}
+
+#store-messages .message span {
+    font-size: 12px;
+    line-height: 1.4em;
+    transition: color 100ms ease 0s;
+    color:#999;
+    text-align:left;
+    display:inline-block;
+    font-family:arial;
+    margin: 0 2px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.product-view #store-messages .message span {
+    font-size: 13px;
+    line-height: 1.6em;
+    transition: color 100ms ease 0s;
+    color:#999;
+    text-align:left;
+    display:inline-block;
+    font-family:arial;
+    margin: 0 10px;
+    position: relative;
+    padding-left: 40px;
+}
+
+#store-messages .receba-hoje span:before,
+#store-messages .parcele span:before,
+#store-messages .desconto span:before,
+#store-messages .sacola span:before,
+#store-messages .fretegrátis span:before /* inclui */
+
+{
+    position: absolute;
+    left: -20px;
+}
+
+.product-view #store-messages .frete span:before,
+.product-view #store-messages .parcele span:before,
+.product-view #store-messages .desconto span:before,
+.product-view #store-messages .sacola span:before,
+.product-view #store-messages .fretegrátis span:before /* inclui */
+
+{
+    position: absolute;
+    left: -30px;
+}
+
+#store-messages .frete span:before {
+    content:"";
+    display: inline-block;
+    width:63px;
+    height:37px;
+    background: url("../home/img/icon-home.png") no-repeat;
+}
+#store-messages .parcele span:before,
+#store-messages .desconto span:before{
+    text-align: center;
+    content:"";
+    display: inline-block;
+    width:63px;
+    height:28px;
+    top:3px;
+    background: url("../home/img/10x.png") no-repeat;
+}
+#store-messages .desconto span:before{
+    background: url("../images/icons/7p.png") no-repeat;
+    width: 63px;
+    height: 29px;
+    left:-32px;
+}
+
+.product-shop #store-messages .desconto span:before{
+    background: url("../images/icons/10p_t.png") no-repeat;
+    width: 51px;
+    height: 23px;
+    top:7px;
+    left:-20px;
+}
+.product-shop #store-messages .frete span:before{
+    background: url("../home/img/icon-home.png") no-repeat;
+    width: 41px;
+    height: 28px;
+    top:7px;
+    left:-15px;
+}
+#store-messages .sacola span:before {
+    content:"";
+    display: inline-block;
+    width:37px;
+    height:44px;
+    left:-5px;
+    top:-5px;
+    background: url("../home/img/sacola.png") no-repeat;
+}
+
+/* inclui */
+#store-messages .fretegrátis span:before { /* inclui */
+        content:"";
+        display: inline-block;
+        width: 44px;
+        height:44px;
+        left:-5px;
+        top:6px;
+        background: url("../home/img/fretegratis.png") no-repeat;
+
+}
+
+#store-messages.messages-3 .message.receba-hoje span:before { /* inclui FRETE-GRATIS */
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    left: -8px;
+    top: 6px;
+    background: url('../home/img/icon-home.png') no-repeat;
+
+}
+
+#store-messages .message .tagline {
+    display: block;
+    font-size: 9px;
+    line-height: 1.4em;
+    margin-top: 1px;
+    padding-left:28px
+}
+#store-messages .message .separator {
+    border-left: 1px solid #e7e7e7;
+    height: 45px;
+    right: 0;
+    position: absolute;
+    top: 5px;
+    width: 1px;
+}
+.service-section1 {
+    padding:0;
+    border-bottom:1px solid #F0F0F0;
+    width:1170px;
+    margin:auto;
+    margin-bottom:30px;
+    clear:both; display:none;
+}
+.service-section1 #store-messages .message span {
+    color:#666!important
+}
+.service-section1 #store-messages .phone span {
+    color:#666!important;
+    line-height: 1.4em;
+}
+.service-section1 #store-messages {
+    background: none repeat scroll 0 0 #fff;
+    margin: auto;
+    overflow: hidden;
+    width: 1170px;
+}
+.service-section1 #store-messages .message span {
+    line-height: 1.4em;
+}
+.service-section1 #store-messages .message {
+    width:442px;
+    margin-right:0;
+}
+.service-section1 #store-messages .phone {
+    width:260px;
+    padding-right:0;
+    text-align:right;
+}
